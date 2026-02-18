@@ -11,7 +11,9 @@ import { FaCaretDown } from "react-icons/fa";
 const Header = () => {
   return (
     <>
-      <Container className={"fixed top-0 left-1/2 -translate-x-1/2 w-full z-10"}>
+      <Container
+        className={"fixed top-0 left-1/2 -translate-x-1/2 w-full z-10"}
+      >
         <Flex className={"justify-between py-3 text-white"}>
           <Flex className={"gap-x-2"}>
             <FaLocationDot />
@@ -32,7 +34,12 @@ const Header = () => {
           <Flex className={"justify-between font-Oswald"}>
             <Flex className="">
               <Link href={"/"}>
-                <Image src={"/logo.png"} width={130} height={33} />
+                <Image
+                  src={"/logo.png"}
+                  alt="/logo.png"
+                  width={130}
+                  height={33}
+                />
               </Link>
               <ul className="flex gap-x-7.5 text-[#063231] uppercase font-semibold ml-15">
                 <li>
