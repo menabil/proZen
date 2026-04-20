@@ -1,5 +1,6 @@
 import About from "./layouts/About";
 import Banner from "./layouts/Banner";
+import Blog from "./layouts/Blog";
 import Counter from "./layouts/Counter";
 import Members from "./layouts/Members";
 import Process from "./layouts/Process";
@@ -18,6 +19,7 @@ export default function Home() {
       <Process />
       <Members />
       <Testimoni />
+      <Blog />
     </>
   );
 }

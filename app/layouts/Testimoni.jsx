@@ -42,7 +42,7 @@ const Testimoni = () => {
                 happier with the outcome. Trusting Guidance was a wise
                 investment in our future."
               </p>
-              <Image src={testOne} />
+              <Image src={testOne} alt="testOne" />
               <p className="text-xl font-semibold font-Oswald leading-8 text-[#063231] ">
                 John Smith
               </p>
