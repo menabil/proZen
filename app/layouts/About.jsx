@@ -17,7 +17,7 @@ const About = () => {
               width={624}
               height={688}
               alt="About Company"
-              className="w-full h-auto max-w-[500px] lg:max-w-none object-cover rounded-2xl"
+              className="w-full h-auto max-w-125 lg:max-w-none object-cover rounded-2xl"
               priority
             />
           </div>
