@@ -1,8 +1,13 @@
+import React from "react";
 
 const Container = ({ children, className }) => {
   return (
-    <div className={`${className} max-w-330 mx-auto`}>{children}</div>
-  )
-}
+    <div
+      className={`w-full max-w-330 mx-auto px-3 sm:px-6 lg:px-8 ${className}`}
+    >
+      {children}
+    </div>
+  );
+};
 
-export default Container
+export default Container;
