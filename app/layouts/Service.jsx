@@ -40,7 +40,8 @@ const Service = () => {
             Our Services
           </p>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-[60px] text-[#063231] font-semibold leading-tight max-w-full sm:max-w-150 mx-auto pt-2">
-            Versatile Range <br className="hidden sm:block" /> of Business Solutions
+            Versatile Range <br className="hidden sm:block" /> of Business
+            Solutions
           </h2>
         </div>
 
