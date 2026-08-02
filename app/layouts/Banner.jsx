@@ -9,7 +9,6 @@ const Banner = () => {
     <section className="bg-[url(/banner.png)] bg-cover bg-center pt-22 sm:pt-36 lg:pt-44 pb-12 sm:pb-16 lg:pb-20 overflow-hidden min-h-screen flex items-center">
       <Container>
         <Flex className="flex-col lg:flex-row items-center justify-between gap-0 lg:gap-8">
-          
           {/* Left Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h1 className="uppercase font-Oswald font-semibold text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] text-white leading-tight lg:leading-[1.1] max-w-full lg:max-w-150">
@@ -33,7 +32,6 @@ const Banner = () => {
 
           {/* Right Hero Image Area */}
           <div className="w-full lg:w-1/2 relative flex justify-center items-center mt-6 lg:mt-0 px-2 sm:px-6">
-            
             {/* Main Hero Image Container */}
             <div className="relative max-w-70 xs:max-w-[320px] sm:max-w-112.5 lg:max-w-none w-full flex justify-center">
               <Image
@@ -73,10 +71,8 @@ const Banner = () => {
                   Happy clients worldwide
                 </p>
               </div>
-
             </div>
           </div>
-
         </Flex>
       </Container>
     </section>

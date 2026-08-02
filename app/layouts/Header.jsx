@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaLocationDot, FaCaretDown, FaPhone, FaBars, FaXmark } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaCaretDown,
+  FaPhone,
+  FaBars,
+  FaXmark,
+} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +28,6 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <Container className="px-3 sm:px-6">
-        
         {/* Top Info Bar: Hidden on Small Screens, Flexed on Desktop */}
         <div className="hidden lg:block border-b border-white/10">
           <Flex className="justify-between items-center py-2.5 text-white text-xs xl:text-sm">
@@ -47,14 +52,13 @@ const Header = () => {
         {/* Main Header Navbar */}
         <div className="mt-2 lg:mt-3 bg-white rounded-xl sm:rounded-[20px] py-3 px-4 sm:px-6 shadow-md relative">
           <Flex className="justify-between items-center font-Oswald">
-            
             {/* Logo */}
             <Link href="/" className="shrink-0">
-              <Image 
-                src="/logo.png" 
-                alt="logo" 
-                width={130} 
-                height={33} 
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={130}
+                height={33}
                 className="w-24 sm:w-28 lg:w-32.5 h-auto object-contain"
                 priority
               />
@@ -64,7 +68,10 @@ const Header = () => {
             <ul className="hidden lg:flex items-center gap-x-6 xl:gap-x-8 text-[#063231] uppercase font-semibold text-sm xl:text-base">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className="hover:text-[#F75709] transition-colors">
+                  <Link
+                    href={link.href}
+                    className="hover:text-[#F75709] transition-colors"
+                  >
                     <Flex className="items-center gap-x-1">
                       {link.name}
                       {link.hasDropdown && <FaCaretDown className="text-xs" />}
@@ -121,7 +128,6 @@ const Header = () => {
             </div>
           )}
         </div>
-
       </Container>
     </header>
   );

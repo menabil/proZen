@@ -9,7 +9,6 @@ const About = () => {
     <section className="py-8 sm:py-12 md:py-16">
       <Container>
         <Flex className="flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 mt-4 sm:mt-8 lg:mt-12">
-          
           {/* Image Container */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <Image
@@ -27,11 +26,11 @@ const About = () => {
             <h5 className="text-sm sm:text-base text-[#F75709] font-Oswald font-semibold uppercase tracking-wider">
               About company
             </h5>
-            
+
             <h3 className="py-2 sm:py-3 text-2xl sm:text-4xl md:text-5xl lg:text-[56px] text-[#063231] font-Oswald font-semibold leading-tight uppercase">
               We committed to helping you achieve your goals
             </h3>
-            
+
             <p className="text-sm sm:text-lg lg:text-xl text-[#063231] leading-relaxed my-4 sm:my-6">
               At the core of our ethos lies a dedication to our clients. Your
               success is our shared triumph, and we're unwavering in our
@@ -47,7 +46,6 @@ const About = () => {
               </Link>
             </div>
           </div>
-
         </Flex>
       </Container>
     </section>
