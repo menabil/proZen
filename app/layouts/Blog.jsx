@@ -1,84 +1,3 @@
-// import React from "react";
-// import Container from "../components/Container";
-// import Image from "next/image";
-// import bOne from "../../public/bOne.png";
-// import Flex from "../components/Flex";
-
-// const Blog = () => {
-//   return (
-//     <section>
-//       <Container className={"py-32.5"}>
-//         <div className="text-center">
-//           <p className="font-Oswald font-semibold text-base text-[#F75709] uppercase">
-//             recent posts
-//           </p>
-//           <h3 className="uppercase font-Oswald text-[#063231] mx-auto font-semibold text-[60px] leading-16.5 w-138 pt-2.5 pb-7.5">
-//             Read our latest news and articles
-//           </h3>
-//         </div>
-//         <Flex className={"gap-x-7 justify-center"}>
-//           <div className="border-2 border-[#D7DEDE] rounded-[20px] w-fit group">
-//             <Image src={bOne} alt="bOne" className="overflow-hidden" />
-//             <div className="px-6 pt-2.5 pb-7.5">
-//               <Flex className="text-[#063231] text-base gap-x-3">
-//                 <p>June 16, 2024</p>
-//                 <p className="border-l-3 border-[#063231] pl-3">Business</p>
-//               </Flex>
-//               <h5 className="w-91.5 text-[#063231] text-[28px] font-Oswald font-semibold leading-8.5 uppercase pt-2.5 pb-7.5">
-//                 Building Your Own Personal Learning Curriculum
-//               </h5>
-//               <a
-//                 href="#"
-//                 className="text-[#F75709] text-base font-Oswald font-semibold leading-5 uppercase group-hover:underline duration-300"
-//               >
-//                 Read More
-//               </a>
-//             </div>
-//           </div>
-//           <div className="border-2 border-[#D7DEDE] rounded-[20px] w-fit group">
-//             <Image src={bOne} alt="bOne" className="overflow-hidden" />
-//             <div className="px-6 pt-2.5 pb-7.5">
-//               <Flex className="text-[#063231] text-base gap-x-3">
-//                 <p>June 16, 2024</p>
-//                 <p className="border-l-3 border-[#063231] pl-3">Business</p>
-//               </Flex>
-//               <h5 className="w-91.5 text-[#063231] text-[28px] font-Oswald font-semibold leading-8.5 uppercase pt-2.5 pb-7.5">
-//                 Building Your Own Personal Learning Curriculum
-//               </h5>
-//               <a
-//                 href="#"
-//                 className="text-[#F75709] text-base font-Oswald font-semibold leading-5 uppercase group-hover:underline duration-300"
-//               >
-//                 Read More
-//               </a>
-//             </div>
-//           </div>
-//           <div className="border-2 border-[#D7DEDE] rounded-[20px] w-fit group">
-//             <Image src={bOne} alt="bOne" className="overflow-hidden" />
-//             <div className="px-6 pt-2.5 pb-7.5">
-//               <Flex className="text-[#063231] text-base gap-x-3">
-//                 <p>June 16, 2024</p>
-//                 <p className="border-l-3 border-[#063231] pl-3">Business</p>
-//               </Flex>
-//               <h5 className="w-91.5 text-[#063231] text-[28px] font-Oswald font-semibold leading-8.5 uppercase pt-2.5 pb-7.5">
-//                 Building Your Own Personal Learning Curriculum
-//               </h5>
-//               <a
-//                 href="#"
-//                 className="text-[#F75709] text-base font-Oswald font-semibold leading-5 uppercase group-hover:underline duration-300"
-//               >
-//                 Read More
-//               </a>
-//             </div>
-//           </div>
-//         </Flex>
-//       </Container>
-//     </section>
-//   );
-// };
-
-// export default Blog;
-
 import React from "react";
 import Container from "../components/Container";
 import Image from "next/image";
@@ -121,7 +40,7 @@ const Blog = () => {
           <p className="font-Oswald font-semibold text-sm sm:text-base text-[#F75709] uppercase tracking-wider">
             Recent Posts
           </p>
-          <h2 className="uppercase font-Oswald text-[#063231] font-semibold text-2xl sm:text-4xl lg:text-5xl xl:text-[60px] leading-tight max-w-full sm:max-w-[552px] mx-auto pt-2">
+          <h2 className="uppercase font-Oswald text-[#063231] font-semibold text-2xl sm:text-4xl lg:text-5xl xl:text-[60px] leading-tight max-w-full sm:max-w-138 mx-auto pt-2">
             Read our latest news and articles
           </h2>
         </div>
@@ -131,9 +50,9 @@ const Blog = () => {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="border-2 border-[#D7DEDE] rounded-[20px] overflow-hidden w-full max-w-[366px] flex flex-col group transition-all duration-300 hover:shadow-lg"
+              className="border-2 border-[#D7DEDE] rounded-[20px] overflow-hidden w-full max-w-91.5 flex flex-col group transition-all duration-300 hover:shadow-lg"
             >
-              <div className="relative w-full aspect-[366/240] overflow-hidden">
+              <div className="relative w-full aspect-366/240 overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}
@@ -143,7 +62,7 @@ const Blog = () => {
                 />
               </div>
 
-              <div className="p-5 sm:p-6 flex flex-col justify-between flex-grow">
+              <div className="p-5 sm:p-6 flex flex-col justify-between grow">
                 <div>
                   <div className="flex items-center text-[#063231] text-xs sm:text-sm gap-x-3 mb-2.5">
                     <span>{post.date}</span>
